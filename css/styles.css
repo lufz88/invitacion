@@ -62,7 +62,7 @@ button {
   background-image: url('../image.png'); 
   background-size: cover;
   background-position: center;
-  animation: fadeInBg 5s 2 ease-in-out forwards alternate;
+  animation: fadeInBg 5s infinite ease-in-out forwards alternate;
 }
 
 .invitacion-texto {
@@ -70,7 +70,7 @@ button {
   position: absolute;
   top: 25%;
   left: 15%;
-  animation: fadeInText 10s 2 ease-in-out forwards alternate;
+  animation: fadeInText 10s infinite ease-in-out forwards alternate;
 }
 
 .invitacion-texto img {
@@ -84,7 +84,7 @@ button {
 
 .fade-in-image {
   opacity: 0;
-  animation: fadeInImage 5s 3 ease-in-out forwards alternate;
+  animation: fadeInImage 5s infinite ease-in-out forwards alternate;
 }
 
 #belen-parrafo {
