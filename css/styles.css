@@ -8,8 +8,8 @@ body {
 
 main {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
@@ -58,28 +58,45 @@ button {
 .invitacion {
   display: none;
   position: relative;
+  width: 100%;
+  height: 100%;
   background-color: #104b7f;
   background-image: url('../image.png'); 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   animation: fadeInBg 5s infinite ease-in-out forwards alternate;
 }
 
-.invitacion-texto {
+.invitacion img {
+  width: 100%;
+  width: 100%;
+}
+
+.div-absolute {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   position: absolute;
-  top: 25%;
-  left: 15%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.div-absolute1 {
   animation: fadeInText 10s infinite ease-in-out forwards alternate;
 }
 
-.invitacion-texto img {
-  position: absolute;
-  left: 24%;
-  margin: 0 auto;
+.div-absolute2 {
+  animation: fadeInText 10s infinite ease-in-out forwards alternate-reverse;
+}
+
+.div-absolute img {
   width: 100px;
   height: 100px;
-
 }
 
 .fade-in-image {
@@ -89,6 +106,7 @@ button {
 
 #belen-parrafo {
   font-size: 20px;
+  text-align: center;
 }
 
 .love {
@@ -170,10 +188,22 @@ button {
       opacity: 0;
   }
   50% {
-      display: block;
+      display: flex;
       opacity: 0;
   }
   100% {
       opacity: 1;
+  }
+}
+
+@keyframes beating {
+  0% {
+  	transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+  	transform: rotate(45deg) scale(1);
   }
 }
